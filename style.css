@@ -98,6 +98,16 @@ header a:hover {
     margin-bottom: 10px;
 }
 
+footer{
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #e2e8f0; 
+    color: #64748b; 
+    font-size: 14px;
+
+}
+
 @media (max-width: 768px) {
     body {
         flex-direction: column;
