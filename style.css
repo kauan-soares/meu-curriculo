@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    width: 320px;
+    padding: 40px 30px;
+    flex-shrink: 0;
+}
+
+header h3 {
+    color: rgb(75, 74, 74);
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.foto {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3b82f6;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.informacoes {
+    text-align: center;
+}
+
+header h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+header h4, header p {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+header h4 {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+header a {
+    color: #2d5599;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+header a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+.conteudo-direita {
+    flex: 1;
+    padding: 40px 50px;
+    overflow-y: auto;
+}
+
+.secao h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: left;
+    color: #1e293b;
+}
+
+.secao p, ul {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: left;
+    color: #334155;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%; 
+        min-height: auto;
+        padding: 30px 20px;
+    }
+
+    header h2 {
+        margin-top: 30px;
+    }
+
+    .conteudo-direita {
+        padding: 20px; 
+    }
+
+    .secao h2 {
+        font-size: 24px; 
+        margin-top: 30px;
+    }
+
+    .secao p, ul {
+        font-size: 16px;
+}
+    .secao object {
+        height: 350px; 
+}
+}
